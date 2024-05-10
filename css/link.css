@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #ede7e7;
+}
+h2{
+    color: #90c2f4;
+    font-size: 1.5em; /* em : 부모 요소에 따른 상대적인 크기 16px * 1.5 = 24px */           
+}
+a{
+    color: #0073e6;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    font-weight: bold; /* 폰트 두께를 두껍게 설정 */
+}
+
+a:hover{ /* 동적 가상 클래스 선택자 - 마우스가 올라가면 동적으로 밑줄이 그어진다. */
+    text-decoration: underline;
+}
+
+/* 한번이라도 방문한 적이 있는 경우 */
+a:visited{
+    color: red;
+}
+/* 한번도 방문한 적이 없는 경우 */
+a:link{
+    color: orange;
+}
